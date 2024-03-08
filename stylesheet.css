@@ -23,6 +23,35 @@ body {
     background-size: cover;
 }
 
+footer a {
+    color: white;
+    background-color: black;
+  }
+  
+  a:not(footer a) {
+    color: black;
+  }
+
+  footer{
+    color:white;
+    background-color: black;
+  }
 .image-link {
     text-decoration: none; 
+    display: block;
+}
+
+nav{
+    background-color: skyblue;
+}
+main{
+    background-color: white;
+}
+
+a:hover{
+    color:red;
+}
+
+header:not(nav){
+    background-color:tan;
 }
