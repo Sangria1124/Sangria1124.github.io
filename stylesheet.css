@@ -1,4 +1,28 @@
-body
-{
-    background-image: url(background_image.png);
+body {
+    background-image: url('background_image.png');
+}
+
+@keyframes imageAnimation {
+    0%, 49.99% {
+        opacity: 1;
+        background-image: url('eiiba_image.png');
+    }
+    50%, 100% {
+        opacity: 1;
+        background-image: url('eiiba_image_p2.png');
+    }
+}
+
+.image-container {
+    width: 100px; 
+    height: 100px; 
+    animation-name: imageAnimation;
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    background-size: cover;
+}
+
+.image-link {
+    text-decoration: none; 
 }
