@@ -41,17 +41,43 @@ footer a {
     display: block;
 }
 
-nav{
+nav ul{
+    list-style: none;
     background-color: skyblue;
+    font-size: 0;
+    text-align: center;
+    border: 1px solid tan;
+
+}
+
+nav li{
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+
+}
+
+nav li a{
+    text-decoration:none;
+    font-weight: bold;
 }
 main{
     background-color: white;
 }
 
-a:hover{
-    color:red;
+a:hover:not(.image-link){
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-clip: text;
+    display: inline-block
 }
 
 header:not(nav){
     background-color:tan;
+}
+
+h3{
+    text-align: center;
 }
