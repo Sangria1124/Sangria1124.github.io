@@ -19,6 +19,30 @@
     <link rel="apple-touch-icon" sizes="180*180" href="eiiba_image.png">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+        /* ヘッダーとフッターの高さ */
+        header, footer {
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Unity WebGLのコンテナが被らないように調整 */
+        #unity-container {
+            width: 100%;
+            height: calc(100vh - 200px); /* ヘッダーとフッターの高さを差し引いた高さ */
+            margin: auto;
+            display: block;
+        }
+
+        /* メッセージ用のスタイル */
+        .message-box {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -30,12 +54,18 @@
         <nav>
             <ul>
                 <li><a href="introduction.html">自己紹介</a></li>
-                <li><a href="works.html">制作物一覧</li>
+                <li><a href="works.html">制作物一覧</a></li>
                 <li><a href="activities.html">活動一覧</a></li>
                 <li>工事中</li>
             </ul>    
         </nav> 
     </header>
+
+    <!-- 画面上部に追加したいメッセージ -->
+    <div class="message-box">
+        名フラッシュゲーム「イニシエダンジョン」に影響を受けて作ったゲームです!!<br>
+        なお、再現するつもりはありませんので、ご了承ください。
+    </div>
 
     <!-- WebGL表示用のmainセクション -->
     <main>
