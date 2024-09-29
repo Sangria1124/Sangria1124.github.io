@@ -27,20 +27,31 @@
             text-align: center;
         }
 
-        /* Unity WebGLのコンテナが被らないように調整 */
-        #unity-container {
-            width: 100%;
-            height: calc(100vh - 200px); /* ヘッダーとフッターの高さを差し引いた高さ */
-            margin: auto;
-            display: block;
-        }
-
         /* メッセージ用のスタイル */
         .message-box {
             text-align: center;
             margin: 20px 0;
             font-size: 18px;
             color: #333;
+        }
+
+        /* WebGLコンテナのスタイル調整 */
+        #unity-container {
+            width: 100%;
+            max-width: 100%;
+            height: calc(100vh - 200px); /* 高さの計算 */
+            max-height: calc(100vh - 200px); /* 高さの最大値 */
+            margin: 0 auto; /* 中央揃え */
+            display: block;
+        }
+
+        /* ヘッダーとフッターの高さを定義 */
+        header {
+            height: 60px; /* 必要に応じて調整 */
+        }
+
+        footer {
+            height: 60px; /* 必要に応じて調整 */
         }
     </style>
 </head>
@@ -63,8 +74,7 @@
 
     <!-- 画面上部に追加したいメッセージ -->
     <div class="message-box">
-        名フラッシュゲーム「イニシエダンジョン」に影響を受けて作ったゲームです!!<br>
-        なお、再現するつもりはありませんので、ご了承ください。
+        WebGL版「イニシエダンジョン」へようこそ！
     </div>
 
     <!-- WebGL表示用のmainセクション -->
